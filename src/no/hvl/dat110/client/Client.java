@@ -14,7 +14,7 @@ public class Client extends Thread {
 		client = new MessagingClient(server, port);
 		this.user = user;
 	}
-//com
+    //com
 	private void send(Message msg) {
 
 		connection.send(MessageUtils.toTransportMessage(msg));
