@@ -6,7 +6,33 @@ public class CreateTopicMsg extends Message {
 	
 	// TODO: 
 	// Implement object variables - a topic is required
-	
-	// Constructor, get/set-methods, and toString method
+
+
+    private String topic;
+
+    public CreateTopicMsg(String user, String topic) {
+        super();
+        this.topic = topic;
+
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+    @Override
+    public String toString() {
+        return "CreateTopicMsg{" +
+                "user='" + super.getUser() + '\'' +
+                ", topic='" + topic + '\'' +
+                '}';
+    }
+
+
+
+    // Constructor, get/set-methods, and toString method
     // as described in the project text	
 }
